@@ -20,6 +20,7 @@ public class SeniorTraveller extends Traveller {
 	}
 
 	// overriding calculatefare method from Traveller Class
+	@Override
 	public void calculateFare() {
 		if (this.age <= 50 && this.age >= 65) {
 			fare = 2000 * 0.9;
@@ -34,6 +35,7 @@ public class SeniorTraveller extends Traveller {
 	}
 	
 	// Displaying Senior traveller details
+	@Override
 	public void displayDetails() {
 		calculateFare();
 		if(fare!=-1) {
